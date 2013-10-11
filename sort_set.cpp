@@ -24,7 +24,7 @@ int main (int argc, char *argv[])
 	std::set<const char*, compare> sorted;
 
 	for (auto f : list) {
-		sorted.insert(strdup (f));
+		sorted.insert(f);
 	}
 
 	for (auto f : sorted) {
